@@ -1,24 +1,37 @@
-html {
-    box-sizing: border-box;
-    /* font-family: */
-}
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --nav-fondo: ;
+    --color-nav: lightblue;
 }    
 
-header nav {
-    background-color: var(--nav-fondo);
-    
+.contenedor {
+    /*margin 0 auto me va poner el margen arriba y abajo. El auto me va poner el mismo margen a la derecha y la izquierda sin importar la dimension de la pantalla*/
+    margin: 1rem auto;
+    /*el promedio es de 1090px a 1300px*/
+    max-width: 1100px;
+    /*Para usar de guia graficamente*/
+    border: 1px solid darkblue; 
+    /*para ver todo bien organizado*/
+    height: 80vh; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* :hover {
     background-color: aliceblue;
