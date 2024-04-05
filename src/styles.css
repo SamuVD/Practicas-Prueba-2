@@ -1,25 +1,86 @@
-/* *, */
-/* *::before, */
-/* *::after { */
-    /* box-sizing: border-box; */
-    /* margin: 0; */
-    /* padding: 0; */
-/* } */
-/*  */
-/* :root { */
-    /* --color-nav: lightblue; */
-/* }     */
-/*  */
-/* .contenedor { */
-    /* margin 0 auto me va poner el margen arriba y abajo. El auto me va poner el mismo margen a la derecha y la izquierda sin importar la dimension de la pantalla */
-    /* margin: 1rem auto; */
-    /* el promedio es de 1090px a 1300px */
-    /* max-width: 1100px; */
-    /* Para usar de guia graficamente */
-    /* border: 1px solid darkblue;  */
-    /* para ver todo bien organizado */
-    /* height: 80vh;  */
-/* } */
+/* Seteo de página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Paleta de colores */
+:root {
+    --header: #59A5D8;
+    --letter: #F4FFFD;
+    --footer: #00171F;
+    --main: #DBD3D8;
+    --articulo-1: #F9A03F;
+    --articulo-2: #8884FF;
+    --articulo-3: #000022;
+}
+/*Color del fondo de la página*/
+body {
+    background-color: var(--main);
+}
+/*Seteo del section del header*/
+.position {
+    background-color: var(--header);
+    position: sticky;
+    top: 0;
+}
+/* Seteo de la barra de navegación */
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Seteo del logo de la empresa */
+header img {
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+/*Seteo de los ancle*/
+header a {
+    color: var(--letter);
+    text-decoration: none;
+}
+/*Seteo del representativo de la empresa*/
+.representativo {
+    font-family: cursive;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/*Seteo de los navegadores de la página*/
+.navegadores {
+    font-size: 25px;
+    display: flex;
+    margin-right: 10%;
+    gap: 80px;
+}
+/*Seteo del main*/
+main {
+    margin-top: 50px;
+}
+/*Imagen de la frase*/
+#img-frase {
+    width: 60%;
+}
+.frase {
+    background-color: rgba( 0, 0, 0, 0,6);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+}   
+
+
+
+
+
+
+
+
+
 
 
 
