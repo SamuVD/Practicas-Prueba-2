@@ -45,86 +45,79 @@
     </header>
     <!-- Cuerpo de página -->
     <main>
-        <!-- Sección de contenido -->
+        <!-- Frase identificadora de la página -->
         <section class="frase">
-            <!-- Frase identificadora de la página -->
-            <section>
-                <figure class="cont-frase">
-                    <p id="parrafo-frase">
-                        Tu comida cuando quieras, donde quieras.
-                        Una plataforma de servicio a domicilio que lleva comida de tu restaurante favorito a tu puerta. 
-                    </p>
+            <p id="parrafo-frase">
+                Tu comida cuando quieras, donde quieras.
+                Una plataforma de servicio a domicilio que lleva comida de tu restaurante favorito a tu puerta. 
+            </p>
+        </section>
+        <!-- Sección informativa -->
+        <section class="tarjetas">
+            <article class="contenedor-arti">
+                <figure class="img-arti">
+                    <img src="./public/img/carne.webp" alt="plato de comida">
                 </figure>
-            </section>
-            <!-- Artículos informativos -->
-            <section>
-                <article class="contenedor-arti">
-                    <figure class="img-arti">
-                        <img src="./public/img/articulo1.webp" alt="plato de comida">
-                    </figure>
-                    <div>
-                        <h2>Pide de tus restaurantes favoritos.</h2>
-                        <p>
-                            En DiDi Food podrás encontrar una gran variedad de restaurantes y tipos de comidas. Tu restaurante favorito está a un clic de distancia.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="./public/img/articulo2.webp" alt="mujer con celular">
-                    </figure>
-                    <div>
-                        <h2>Pide sin complicaciones</h2>
-                        <p>
-                            ¿Quieres sushi, una hamburguesa o una pizza? Con DiDi Food pedir es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas la comida directamente en tu puerta.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <figure>
-                        <img src="./public/img/articulo3.webp" alt="pedido de comida">
-                    </figure>
-                    <div>
-                        <h2>Entrega rápida</h2>
-                        <p>
-                            Los socios repartidores expertos de DiDi Food garantizan que los pedidos se entreguen rápidamente y en perfectas condiciones.
-                        </p>
-                    </div>
-                </article>
-            </section>
-            <!-- Información extra. -->
-            <section>
-                <aside>
-                    <figure>
-                        <img src="./public/img/extra1.webp" alt="mujer sonriendo">
-                    </figure>
-                    <div>
-                        <h2>Conviértete en una tienda DiDi.</h2>
-                        <p>
-                            Asóciate con DiDi Food para atraer más clientes con facilidad y llevar tu negocio al siguiente nivel.
-                        </p>
-                        <button>
-                            <!-- Direcciona a otra pestaña -->
-                            <a href="https://www.didi-food.com/es-CO/store">Leer más  -></a>
-                        </button>
-                    </div>
-                </aside>
-                <aside>
-                    <div>
-                        <h2>Únete al equipo de entregas de DiDi Food.</h2>
-                        <p>
-                            Únete al equipo de entregas de DiDi Food y entrega pedidos con tu scooter, bici o motocicleta. Puedes elegir libremente las horas, ganar dinero y premios.
-                        </p>
-                        <button>
-                            <!-- Direcciona a otra pestaña -->
-                            <a href="https://www.didi-food.com/es-419/delivery">Leer más -></a>
-                        </button>
-                    </div>
-                    <figure>
-                        <img src="./public/img/extra2.webp" alt="persona en bicicleta">
-                    </figure>
-                </aside>
-            </section>
+                 <div class="info">
+                    <h2>Pide de tus restaurantes favoritos.</h2>
+                    <p>
+                        En DiDi Food podrás encontrar una gran variedad de restaurantes y tipos de comidas. Tu restaurante favorito está a un clic de distancia.
+                    </p>
+                </div>
+            </article>
+            <article class="contenedor-arti">
+                <figure class="img-arti">
+                    <img src="./public/img/celular.webp" alt="mujer">
+                </figure>
+                 <div class="info">
+                    <h2>Pide sin complicaciones</h2>
+                    <p>
+                        ¿Quieres sushi, una hamburguesa o una pizza? Con DiDi Food pedir es fácil y rápido. ¿No tienes efectivo? No te preocupes, también puedes pagar con tarjeta de crédito. Nuestra prioridad es que recibas la comida directamente en tu puerta.
+                    </p>
+                </div>
+            </article>
+            <article class="contenedor-arti">
+                <figure class="img-arti">
+                    <img src="./public/img/domicilio.jpeg" alt="domicilio">
+                </figure>
+                 <div class="info">
+                    <h2>Entrega rápida</h2>
+                    <p>
+                        Los socios repartidores expertos de DiDi Food garantizan que los pedidos se entreguen rápidamente y en perfectas condiciones.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!-- Información extra -->
+        <section class="restaurante">
+            <figure class="imagen-restaurante">
+                <img src="./public/img/mujer.webp" alt="mujer sonriendo">
+            </figure>
+            <div class="texto-restaurante">
+                <h2>Conviértete en una tienda DiDi.</h2>
+                <p>
+                    Asóciate con DiDi Food para atraer más clientes con facilidad y llevar tu negocio al siguiente nivel.
+                </p>
+                <button class="boton-restaurante">
+                    <!-- Direcciona a otra pestaña -->
+                    <a href="https://www.didi-food.com/es-CO/store">Leer más > </a>
+                </button>
+            </div>
+        </section>
+        <section class="restaurante">
+            <figure class="imagen-restaurante">
+                <img src="./public/img/extra2.webp" alt="repartidor">
+            </figure>
+            <div class="texto-restaurante">
+                <h2>Únete al equipo de entregas de DiDi Food.</h2>
+                <p>
+                    Únete al equipo de entregas de DiDi Food y entrega pedidos con tu scooter, bici o motocicleta. Puedes elegir libremente las horas, ganar dinero y premios.
+                </p>
+                <button class="boton-restaurante">
+                    <!-- Direcciona a otra pestaña -->
+                    <a href="https://www.didi-food.com/es-CO/store">Leer más > </a>
+                </button>
+            </div>
         </section>
     </main>
     <!-- Pie de página -->
