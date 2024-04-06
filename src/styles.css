@@ -62,16 +62,36 @@ main {
     margin-top: 50px;
 }
 /*Imagen de la frase*/
-#img-frase {
-    width: 60%;
-}
+
+/*Seteo de la frase*/
 .frase {
-    background-color: rgba( 0, 0, 0, 0,6);
     display: flex;
     justify-content: center;
-    text-align: center;
-    flex-direction: column; 
-}   
+    width: 80%;
+    height: 960px;
+    background-color: #000022;
+}
+/*Seteo del párrafo*/
+/* #parrafo-frase {
+    background-color: rgba( 0, 0, 0, 0.4);
+    color: var(--letter);
+    font-size: large;
+    display: flex;   
+} */
+/*Contenedor del articulo 1*/
+/* .contenedor-arti {
+    margin: 0 auto;
+    max-width: 66%;
+    border: 2px solid black;
+    height: 50vh;
+    margin-top: 10%;
+} */
+/*Seteo de la imagen 1*/
+/* .img-arti {
+   display: flex;
+   justify-content: start;
+   width: 33%;
+} */
 
 
 
@@ -94,6 +114,10 @@ main {
 
 
 
+/* flex-direction: column;
+    align-items: center;
+    margin-block-start: -40px;
+    width: 100%; */
 /* :hover {
     background-color: aliceblue;
 } */
