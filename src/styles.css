@@ -1,5 +1,5 @@
 /* Seteo de página */
-html{
+html {
     box-sizing: border-box;
 }
 
@@ -11,50 +11,50 @@ html{
     padding: 0;
 }
 
-body{
+body {
     margin:0;
     overflow-x: hidden;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 /* Paleta de colores */
 :root {
-    --header: #59A5D8;
-    --letter: #F4FFFD;
-    --footer: #00171F;
-    --main: #DBD3D8;
-    --articulo-1: #F9A03F;
-    --articulo-2: #8884FF;
-    --articulo-3: #000022;
+    --azul-suave: #59A5D8;
+    --blanco: #F4FFFD;
+    --negro-azul: #00171F;
+    --gris-blanco: #DBD3D8;
+    --naranja: #F9A03F;
+    --azul-profundo: #8884FF;
+    --negro: #000022;
 }
 /*Color del fondo de la página*/
 body {
-    background-color: var(--main);
+    background-color: var(--gris-blanco);
 }
-/*Seteo del section del header*/
-.position {
-    background-color: var(--header);
+/*Posición pegajosa*/
+.posicion-pegajosa {
+    background-color: var(--azul-profundo);
     position: sticky;
     top: 0;
 }
-/* Seteo de la barra de navegación */
+/*Barra de navegación*/
 .barra-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/* Seteo del logo de la empresa */
+
 header img {
     width: 220px;
     margin-top: 20px;
     margin-left: 20%;
 }
-/*Seteo de los ancle*/
+/*Utilizamos el text-decoration none para eliminar la linea acostada de los ancle*/
 header a {
-    color: var(--letter);
+    color: var(--blanco);
     text-decoration: none;
 }
 /*Representativo de la empresa*/
@@ -65,38 +65,38 @@ header a {
     align-items: center;
     gap: 50px;
 }
-/*Seteo de los navegadores de la página*/
+
 .navegadores {
     font-size: 25px;
     display: flex;
     margin-right: 10%;
     gap: 80px;
 }
-/*Seteo del main*/
+/*Configuración del cuerpo*/
 main {
     margin-top: 50px;
 }
 /*Imagen de la frase*/
-.frase {
+.frase-identificadora {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     height: 500px;
-   background-image: url("./public/img/comidas.jpeg");
+   background-image: url("../public/img/representativo.webp");
    background-repeat: no-repeat;
    background-size: cover;
    display: flex;
    align-items: end;
  }
-/*Seteo del párrafo*/
-#parrafo-frase {
-    background-color: rgba( 0, 0, 0, 0.4);
-    color: var(--letter);
+
+.parrafo-frase {
+    background-color: rgba( 0, 0, 0, 0.7);
+    color: var(--blanco);
     font-size: 35px;
     margin: 0;
 }
-
-.tarjetas{
+/*Sección de artículos*/
+.contenedor-arti {
     margin-top: 64px;
     margin-left: auto;
     margin-right: auto;
@@ -104,13 +104,13 @@ main {
     height: 500px;
     display: flex;
     gap:32px;
+    font-size: 20px;
  }
  
- .contenedor-arti {
+ .articulos {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
-    background-color: #59A5D8;
+    background-color: var(--naranja);
     width: 33%;
 }
 
@@ -119,31 +119,38 @@ main {
     margin:0;
  }
  
- .img-arti img{
+ .img-arti img {
      width: 100%;
      height: 100%;
  }
  
- .info{
+ .info {
      height: 50%;
      padding: 32px;
      margin: 0;
  }
- 
- .restaurante{
-     margin-top: 32px;
+ /*Sección de más información*/
+ .socio {
+     margin-top: 55px;
+     margin-bottom: 55px;
      margin-left: auto;
      margin-right: auto;
      width: 80%;
      display: flex;
-     background-color: aliceblue;
+     background-color: var(--azul-suave);
+     font-size: 30px;
  }
  
- .imagen-restaurante{
+ .imagen-socio {
      width: 60%;
  }
+
+ .extra-2 {
+    width: 100%;
+    height: 100%;
+ }
  
- .texto-restaurante{
+ .texto-socio {
      width: 40%;
      display: flex;
      flex-direction: column;
@@ -152,57 +159,128 @@ main {
      align-items: center;
  }
  
- .imagen-restaurante img{
+ .imagen-socio img{
      width: 100%;
      height: 100%;
  }
  
- .texto-restaurante p{
+ .texto-socio p{
      margin-bottom: 48px;
  }
  
- .boton-restaurante{
-     background-color: var(--header);
-     width: 100px;
+ .boton-socio{
+     background-color: var(--naranja);
+     width: 160px;
+     height: 40px;
      padding: 8px;
+     border-style: none;
+     border-radius: 15px;
  }
  
- .boton-restaurante a{
+ .boton-socio a{
+    font-size: 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--negro-azul);
  }
-
+/*Mapa-Formulario-Video informativo*/
+/*Contenedor de la sección*/
  .map-form-video {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-around;
  }
 
+ .mapa {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 53px;
+ }
 
+ .formulario {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+ }
+ 
+ .video {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-right: 25px;
+    margin-top: 53px;
+    margin-bottom: 30px;
+ }
+/*Sección del pie de página*/
+/*Contenedor*/
+ .pie-pag {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-items: start
+ }
 
+ footer {
+    background-color: var(--negro-azul);
+    color: var(--blanco);
+ }
 
+ .pie-pag {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-flow: row;
+}
 
+footer img {
+    width: 220px;
+    margin-top: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* flex-direction: column;
+.logo-footer {
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
     align-items: center;
-    margin-block-start: -40px;
-    width: 100%; */
-/* :hover {
-    background-color: aliceblue;
-} */
+    gap: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+/*Sobre la empresa*/
+ .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+ }
+
+ .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+ }
+
+ .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+ }
+
+ .copyright {
+    margin-left: 10px;
+ }
     

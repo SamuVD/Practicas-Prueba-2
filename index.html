@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Encabezado de página -->
-    <header class="position">
+    <header class="posicion-pegajosa">
         <section>
             <!-- Barra de navegación -->
             <nav class="barra-nav">
@@ -46,17 +46,17 @@
     <!-- Cuerpo de página -->
     <main>
         <!-- Frase identificadora de la página -->
-        <section class="frase">
-            <p id="parrafo-frase">
+        <section class="frase-identificadora">
+            <p class="parrafo-frase">
                 Tu comida cuando quieras, donde quieras.
                 Una plataforma de servicio a domicilio que lleva comida de tu restaurante favorito a tu puerta. 
             </p>
         </section>
         <!-- Sección informativa -->
-        <section class="tarjetas">
-            <article class="contenedor-arti">
+        <section class="contenedor-arti">
+            <article class="articulos">
                 <figure class="img-arti">
-                    <img src="./public/img/carne.webp" alt="plato de comida">
+                    <img src="./public/img/articulo1.webp" alt="plato con comida">
                 </figure>
                  <div class="info">
                     <h2>Pide de tus restaurantes favoritos.</h2>
@@ -65,9 +65,9 @@
                     </p>
                 </div>
             </article>
-            <article class="contenedor-arti">
+            <article class="articulos">
                 <figure class="img-arti">
-                    <img src="./public/img/celular.webp" alt="mujer">
+                    <img src="./public/img/articulo2.webp" alt="mujer con celular en las manos">
                 </figure>
                  <div class="info">
                     <h2>Pide sin complicaciones</h2>
@@ -76,9 +76,9 @@
                     </p>
                 </div>
             </article>
-            <article class="contenedor-arti">
+            <article class="articulos">
                 <figure class="img-arti">
-                    <img src="./public/img/domicilio.jpeg" alt="domicilio">
+                    <img src="./public/img/articulo3.webp" alt="paguete de comida">
                 </figure>
                  <div class="info">
                     <h2>Entrega rápida</h2>
@@ -89,115 +89,118 @@
             </article>
         </section>
         <!-- Información extra -->
-        <section class="restaurante">
-            <figure class="imagen-restaurante">
-                <img src="./public/img/mujer.webp" alt="mujer sonriendo">
+        <section class="socio">
+            <figure class="imagen-socio">
+                <img src="./public/img/extra1.webp" alt="mujer sonriendo">
             </figure>
-            <div class="texto-restaurante">
+            <div class="texto-socio">
                 <h2>Conviértete en una tienda DiDi.</h2>
                 <p>
                     Asóciate con DiDi Food para atraer más clientes con facilidad y llevar tu negocio al siguiente nivel.
                 </p>
-                <button class="boton-restaurante">
+                <button class="boton-socio">
                     <!-- Direcciona a otra pestaña -->
-                    <a href="https://www.didi-food.com/es-CO/store">Leer más > </a>
+                    <a href="https://www.didi-food.com/es-CO/store">Leer más -> </a>
                 </button>
             </div>
         </section>
-        <section class="restaurante">
-            <figure class="imagen-restaurante">
-                <img src="./public/img/extra2.webp" alt="repartidor">
+        <section class="socio">
+            <figure class="imagen-socio">
+                <img class="extra-dos" src="./public/img/extra2.webp" alt="domiciliario en bicileta">
             </figure>
-            <div class="texto-restaurante">
+            <div class="texto-socio">
                 <h2>Únete al equipo de entregas de DiDi Food.</h2>
                 <p>
                     Únete al equipo de entregas de DiDi Food y entrega pedidos con tu scooter, bici o motocicleta. Puedes elegir libremente las horas, ganar dinero y premios.
                 </p>
-                <button class="boton-restaurante">
+                <button class="boton-socio">
                     <!-- Direcciona a otra pestaña -->
-                    <a href="https://www.didi-food.com/es-CO/store">Leer más > </a>
+                    <a href="https://www.didi-food.com/es-CO/store">Leer más -> </a>
                 </button>
             </div>
         </section>
+        <!-- Material informativo -->
         <section class="map-form-video">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.607761641143!2d-75.57609240702077!3d6.230032244042185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442978ed3fd89f%3A0x468a043af29e6a79!2sDidi%20Club!5e0!3m2!1ses-419!2sco!4v1712382398235!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.607761641143!2d-75.57609240702077!3d6.230032244042185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442978ed3fd89f%3A0x468a043af29e6a79!2sDidi%20Club!5e0!3m2!1ses-419!2sco!4v1712382398235!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="formulario">
                     <form action="#" method="post">
-                        <div>
-                            <p>Nombre Completo</p>
+                        <div class="nombre">
+                            <p>Nombre Completo:</p>
                             <label for="nombre"></label>
-                            <input class="input-formu" type="text" name="nombre" id="nombre" placeholder="Escribe aquí" required>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí" required>
                         </div>
                         <br>
                         <div>
-                            <p>Correo Electrónico</p>
+                            <p>Correo Electrónico:</p>
                             <label for="email"></label>
-                            <input class="input-formu" type="email" name="email" id="email" placeholder="Escribe aquí" required>
+                            <input type="email" name="email" id="email" placeholder="Escribe aquí" required>
                         </div>
                         <br>
-                        <textarea name="comentarios" id="comentarios" rows="10" placeholder="Comentarios" required></textarea>
+                        <textarea name="comentarios" id="comentarios" rows="12" placeholder="Comentarios" required></textarea>
                     </form>
                 </div>
-                <article>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4seAMFTO9_Q?si=eDYvAq2A8OqbpGdD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <article class="video">
+                    <iframe width="500" height="350" src="https://www.youtube.com/embed/4seAMFTO9_Q?si=eDYvAq2A8OqbpGdD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </article>
         </section>
     </main>
     <!-- Pie de página -->
     <footer>
-        <section>
+        <section class="pie-pag">
             <div>
-                <figure>
+                <figure class="logo-footer">
                     <!-- Redirección al cuerpo de página -->
                     <a href="./index.html">
                         <img src="./public/img/logoSAM.webp" alt="Logo de Sam">
                     </a>
                     <figcaption>
                         <a href="./index.html">
-                            <h1>Fast Food Sam</h1>
+                            <h2>Fast Food Sam</h2>
                         </a>
                     </figcaption>
                 </figure>
             </div>
             <!-- Iconos de redes sociales -->
-            <article>
-                <p></p>
+            <article class="redes">
+                <p>Redes Sociales</p>
                 <div>
-                    <a href="https://www.facebook.com/Meta/?lang=es">
+                    <a href="https://www.facebook.com/Meta/?lang=es">Facebook
                         <i class="bi bi-facebook"></i>
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/?lang=es">
+                    <a href="https://www.instagram.com/?lang=es">Instagram
                         <i class="bi bi-instagram"></i>
                     </a>
                 </div>
                 <div>
-                    <a href="https://twitter.com/?lang=es">
+                    <a href="https://twitter.com/?lang=es">Twitter
                         <i class="bi bi-twitter"></i>
                     </a>
                 </div>
             </article>
             <!-- Acerca de la empresa -->
-            <div>
+            <div class="nosotros">
                 <p>Información De La Empresa</p>
                 <a href="https://www.didi-food.com/es-CO/about-us">Sobre Nosotros</a>
             </div>
             <!-- Contacto de la empresa -->
-            <div>
+            <div class="contacto">
                 <p>Contáctanos</p>
-                <a href="https://www.google.com/gmail/about/">
+                <a href="https://www.google.com/gmail/about/">Email
                     <i class="bi bi-envelope-at-fill"></i>
                 </a>
-                <a href="https://wa.me/573135664514/?text = linea de soporte">
+                <a href="https://wa.me/573135664514/?text = linea de soporte">WhatsApp
                     <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
             <!-- Copyright de la página -->
-            <p>
-                © 2024 Riwi DELIVERY FOOD. Todos los derechos reservados
-            </p>
         </section>
+        <p class="copyright">
+            © 2024 Riwi DELIVERY FOOD. Todos los derechos reservados
+        </p>
     </footer>
 </body>
 </html>
