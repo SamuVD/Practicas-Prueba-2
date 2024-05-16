@@ -82,7 +82,7 @@ main {
     margin-right: auto;
     width: 70%;
     height: 500px;
-   background-image: url("../public/img/representativo.webp");
+   background-image: url("../../public/img/representativo.webp");
    background-repeat: no-repeat;
    background-size: cover;
    display: flex;
